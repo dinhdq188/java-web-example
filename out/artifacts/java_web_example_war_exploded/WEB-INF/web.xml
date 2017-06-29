@@ -5,11 +5,14 @@
          version="3.1">
     <!--Start: Math - Add number servlet.-->
     <servlet>
+        <!--Create name of yourself-->
         <servlet-name>Math-AddNumber</servlet-name>
+        <!--Reference of class AddNumberServlet-->
         <servlet-class>web.example.com.servlet.math.AddNumberServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Math-AddNumber</servlet-name>
+        <!--Create name of URL(yourself) -->
         <url-pattern>/math/add-number</url-pattern>
     </servlet-mapping>
     <!--End: Math - Add number servlet.-->
