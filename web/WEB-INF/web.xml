@@ -16,4 +16,15 @@
         <url-pattern>/math/add-number</url-pattern>
     </servlet-mapping>
     <!--End: Math - Add number servlet.-->
+    
+    <!--Start: Math - Add number servlet.-->
+    <servlet>
+        <servlet-name>Math-SubNumber</servlet-name>
+        <servlet-class>web.example.com.servlet.math.SubNumberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Math-SubNumber</servlet-name>
+        <url-pattern>/math/sub-number</url-pattern>
+    </servlet-mapping>
+
 </web-app>
