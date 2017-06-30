@@ -48,4 +48,17 @@
         <servlet-name>Math-DivNumber</servlet-name>
         <url-pattern>/math/div-number</url-pattern>
     </servlet-mapping>
+    <!--End: Math - Div number servlet.-->
+
+    <!--Start: Math - Qua number servlet.-->
+    <servlet>
+        <servlet-name>Math-QuaEquation</servlet-name>
+        <servlet-class>web.example.com.servlet.math.QuaEquationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Math-QuaEquation</servlet-name>
+        <url-pattern>/math/qua-number</url-pattern>
+    </servlet-mapping>
+    <!--End: Math - Div number servlet.-->
+
 </web-app>
