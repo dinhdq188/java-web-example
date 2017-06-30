@@ -40,6 +40,6 @@ public class QuaEquationServlet extends HttpServlet{
             double result3 = -b / (2 * a);
             req.setAttribute("qua-result3", result3);
         }
-        req.getRequestDispatcher("/math/quaEquation.jsp").forward(req, resp);
+        req.getRequestDispatcher("/math/qua-equation.jsp").forward(req, resp);
     }
 }

@@ -23,6 +23,6 @@ public class AddNumberServlet extends HttpServlet {
         Double result = addNumber.calculator(Double.parseDouble(numberA), Double.parseDouble(numberB));
 
     req.setAttribute("add-result", result);
-    req.getRequestDispatcher("/math/addNumber.jsp").forward(req, resp);
+    req.getRequestDispatcher("/math/add-number.jsp").forward(req, resp);
     }
 }

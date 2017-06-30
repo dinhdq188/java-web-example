@@ -26,7 +26,7 @@ public class SubNumberServlet extends HttpServlet{
         Double result = subNumber.calculator(Double.parseDouble(subNumberA), Double.parseDouble(subNumberB));
 
         req.setAttribute("sub-result", result);
-        req.getRequestDispatcher("/math/subNumber.jsp").forward(req, resp);
+        req.getRequestDispatcher("/math/sub-number.jsp").forward(req, resp);
 
     }
 }

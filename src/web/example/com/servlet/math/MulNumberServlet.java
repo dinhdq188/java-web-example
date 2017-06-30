@@ -24,6 +24,6 @@ public class MulNumberServlet extends HttpServlet{
         ICalculator mulNumber = new MulNumberImpl();
         Double result = mulNumber.calculator(Double.parseDouble(mulNumberA), Double.parseDouble(mulNumberB));
         req.setAttribute("mul-number", result);
-        req.getRequestDispatcher("/math/mulNumber.jsp").forward(req, resp);
+        req.getRequestDispatcher("/math/mul-number.jsp").forward(req, resp);
     }
 }

@@ -25,7 +25,7 @@ public class DivNumberServlet extends HttpServlet {
         Double result = divNumber.calculator(Double.parseDouble(divNumberA), Double.parseDouble(divNumberB));
 
         req.setAttribute("div-result", result);
-        req.getRequestDispatcher("/math/divNumber.jsp").forward(req, resp);
+        req.getRequestDispatcher("/math/div-number.jsp").forward(req, resp);
     }
 }
 
