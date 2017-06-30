@@ -17,7 +17,7 @@
     </servlet-mapping>
     <!--End: Math - Add number servlet.-->
     
-    <!--Start: Math - Add number servlet.-->
+    <!--Start: Math - Sub number servlet.-->
     <servlet>
         <servlet-name>Math-SubNumber</servlet-name>
         <servlet-class>web.example.com.servlet.math.SubNumberServlet</servlet-class>
@@ -26,5 +26,17 @@
         <servlet-name>Math-SubNumber</servlet-name>
         <url-pattern>/math/sub-number</url-pattern>
     </servlet-mapping>
+    <!--End: Math - Sub number servlet.-->
+
+    <!--Start: Math - Mul number servlet.-->
+    <servlet>
+        <servlet-name>Math-MulNumber</servlet-name>
+        <servlet-class>web.example.com.servlet.math.MulNumberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Math-MulNumber</servlet-name>
+        <url-pattern>/math/mul-number</url-pattern>
+    </servlet-mapping>
+    <!--End: Math - Mul number servlet.-->
 
 </web-app>
