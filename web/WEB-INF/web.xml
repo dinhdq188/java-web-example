@@ -39,4 +39,13 @@
     </servlet-mapping>
     <!--End: Math - Mul number servlet.-->
 
+    <!--Start: Math - Mul number servlet.-->
+    <servlet>
+        <servlet-name>Math-DivNumber</servlet-name>
+        <servlet-class>web.example.com.servlet.math.DivNumberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Math-DivNumber</servlet-name>
+        <url-pattern>/math/div-number</url-pattern>
+    </servlet-mapping>
 </web-app>
