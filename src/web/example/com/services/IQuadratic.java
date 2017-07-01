@@ -1,4 +1,4 @@
-package web.example.com;
+package web.example.com.services;
 
 /**
  * Created by datdq295 on 6/30/17.

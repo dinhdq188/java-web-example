@@ -1,6 +1,6 @@
-package web.example.com.impl;
+package web.example.com.services.impl;
 
-import web.example.com.ICalculator;
+import web.example.com.services.ICalculator;
 
 /**
  * Created by datdq295 on 6/30/17.

@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.ICalculator;
-import web.example.com.impl.AddNumberImpl;
+import web.example.com.services.ICalculator;
+import web.example.com.services.impl.AddNumberImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

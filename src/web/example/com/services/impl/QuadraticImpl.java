@@ -1,6 +1,6 @@
-package web.example.com.impl;
+package web.example.com.services.impl;
 
-import web.example.com.IQuadratic;
+import web.example.com.services.IQuadratic;
 
 /**
  * Created by datdq295 on 6/30/17.

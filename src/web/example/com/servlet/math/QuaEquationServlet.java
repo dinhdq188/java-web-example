@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.IQuadratic;
-import web.example.com.impl.QuadraticImpl;
+import web.example.com.services.IQuadratic;
+import web.example.com.services.impl.QuadraticImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
