@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.services.ICalculator;
-import web.example.com.services.impl.MulNumberImpl;
+import web.example.com.services.math.ICalculator;
+import web.example.com.services.math.impl.CalculatorImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,8 +21,8 @@ public class MulNumberServlet extends HttpServlet{
         if("".equals(mulNumberA) || "".equals(mulNumberB)){
             return;
         }
-        ICalculator mulNumber = new MulNumberImpl();
-        Double result = mulNumber.calculator(Double.parseDouble(mulNumberA), Double.parseDouble(mulNumberB));
+        ICalculator calculator = new CalculatorImpl();
+        Double result = calculator.multiNumber(Double.parseDouble(mulNumberA), Double.parseDouble(mulNumberB));
         req.setAttribute("mul-number", result);
         req.getRequestDispatcher("/math/mul-number.jsp").forward(req, resp);
     }

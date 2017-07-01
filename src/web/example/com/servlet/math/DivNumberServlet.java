@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.services.ICalculator;
-import web.example.com.services.impl.DivNumberImpl;
+import web.example.com.services.math.ICalculator;
+import web.example.com.services.math.impl.CalculatorImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,8 +21,8 @@ public class DivNumberServlet extends HttpServlet {
         if ("".equals(divNumberA) || "".equals(divNumberB) || divNumberB.equals(0)) {
             return;
         }
-        ICalculator divNumber = new DivNumberImpl();
-        Double result = divNumber.calculator(Double.parseDouble(divNumberA), Double.parseDouble(divNumberB));
+        ICalculator calculator = new CalculatorImpl();
+        Double result = calculator.divNumber(Double.parseDouble(divNumberA), Double.parseDouble(divNumberB));
 
         req.setAttribute("div-result", result);
         req.getRequestDispatcher("/math/div-number.jsp").forward(req, resp);

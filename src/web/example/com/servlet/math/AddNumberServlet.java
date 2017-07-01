@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.services.ICalculator;
-import web.example.com.services.impl.AddNumberImpl;
+import web.example.com.services.math.ICalculator;
+import web.example.com.services.math.impl.CalculatorImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,9 +18,9 @@ public class AddNumberServlet extends HttpServlet {
         String numberA = req.getParameter("add-number-a");
         String numberB = req.getParameter("add-number-b");
 
-        ICalculator addNumber = new AddNumberImpl();
+        ICalculator calculator = new CalculatorImpl();
 
-        Double result = addNumber.calculator(Double.parseDouble(numberA), Double.parseDouble(numberB));
+        Double result = calculator.addNumber(Double.parseDouble(numberA), Double.parseDouble(numberB));
 
     req.setAttribute("add-result", result);
     req.getRequestDispatcher("/math/add-number.jsp").forward(req, resp);

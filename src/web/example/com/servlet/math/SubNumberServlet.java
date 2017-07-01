@@ -1,7 +1,7 @@
 package web.example.com.servlet.math;
 
-import web.example.com.services.ICalculator;
-import web.example.com.services.impl.SubNumberImpl;
+import web.example.com.services.math.ICalculator;
+import web.example.com.services.math.impl.CalculatorImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -22,8 +22,8 @@ public class SubNumberServlet extends HttpServlet{
         if ("".equals(subNumberA) || "".equals(subNumberB)) {
             return;
         }
-        ICalculator subNumber = new SubNumberImpl();
-        Double result = subNumber.calculator(Double.parseDouble(subNumberA), Double.parseDouble(subNumberB));
+        ICalculator calculator = new CalculatorImpl();
+        Double result = calculator.subNumber(Double.parseDouble(subNumberA), Double.parseDouble(subNumberB));
 
         req.setAttribute("sub-result", result);
         req.getRequestDispatcher("/math/sub-number.jsp").forward(req, resp);
