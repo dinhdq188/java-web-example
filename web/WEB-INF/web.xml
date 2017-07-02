@@ -61,4 +61,14 @@
     </servlet-mapping>
     <!--End: Math - Div number servlet.-->
 
+    <!--Start: Upper - Get all topics servlet.-->
+    <servlet>
+        <servlet-name>Upper-GetAllTopics</servlet-name>
+        <servlet-class>web.example.com.servlet.upper.GetAllTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upper-GetAllTopics</servlet-name>
+        <url-pattern>/upper/get-all-topics</url-pattern>
+    </servlet-mapping>
+    <!--End: Upper - Get all topics servlet.-->
 </web-app>
