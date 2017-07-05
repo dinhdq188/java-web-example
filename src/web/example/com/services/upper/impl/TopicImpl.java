@@ -19,6 +19,8 @@ import java.util.List;
 public class TopicImpl implements ITopic{
     /**
      * SQL query string to get all topics.
+     * The SELECT statement is used to select data from a database.
+     * The data returned is stored in a result table, called the result-set.
      */
     public static final String SQL_QUERY_GET_ALL_TOPICS = "SELECT * FROM Topics";
 
@@ -42,6 +44,7 @@ public class TopicImpl implements ITopic{
                 topic.setId(resultSet.getInt(Topics.COLUMN_ID));
                 topic.setTopicName(resultSet.getString(Topics.COLUMN_TOPIC_NAME));
                 topic.setSummary(resultSet.getString(Topics.COLUMN_SUMMARY));
+
 
                 //Add to the final topic list.
                 topicsList.add(topic);

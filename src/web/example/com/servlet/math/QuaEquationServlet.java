@@ -20,37 +20,37 @@ public class QuaEquationServlet extends HttpServlet{
     /**
      * The parameter a of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_A = "qua-number-a";
+    private static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_A = "qua-number-a";
 
     /**
      * The parameter b of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_B = "qua-number-b";
+    private static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_B = "qua-number-b";
 
     /**
      * The parameter c of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_C = "qua-number-c";
+    private static final String QUADRATIC_EQUATION_PARAMETER_NUMBER_C = "qua-number-c";
 
     /**
      * The result 1 of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_1 = "qua-result1";
+    private static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_1 = "qua-result1";
 
     /**
      * The result 2 of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_2 = "qua-result2";
+    private static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_2 = "qua-result2";
 
     /**
      * The result 3 of the quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_3 = "qua-result3";
+    private static final String QUADRATIC_EQUATION_SERVLET_ATTRIBUTE_RESULT_3 = "qua-result3";
 
     /**
-     * The result 3 of the quadratic equation.
+     * The jsp path of quadratic equation.
      */
-    public static final String QUADRATIC_EQUATION_JSP_QUA_EQUATION = "/math/qua-equation.jsp";
+    private static final String QUADRATIC_EQUATION_JSP_QUA_EQUATION = "/math/qua-equation.jsp";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
