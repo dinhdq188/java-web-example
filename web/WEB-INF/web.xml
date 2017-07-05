@@ -71,4 +71,13 @@
         <url-pattern>/upper/get-all-topics</url-pattern>
     </servlet-mapping>
     <!--End: Upper - Get all topics servlet.-->
+
+    <servlet>
+        <servlet-name>Upper-GetAllGalleries</servlet-name>
+        <servlet-class>web.example.com.servlet.upper.GetAllGalleriesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upper-GetAllGalleries</servlet-name>
+        <url-pattern>/upper/get-all-galleries</url-pattern>
+    </servlet-mapping>
 </web-app>
