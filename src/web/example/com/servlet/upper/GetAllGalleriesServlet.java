@@ -19,7 +19,7 @@ public class GetAllGalleriesServlet extends HttpServlet{
     /**
      * The attribute list galleries
      */
-    public static final String GET_ALL_GALLERIES_SERVLET_ATTRIBUTE_LIST = "galleries-list";
+    public static final String GET_ALL_GALLERIES_SERVLET_ATTRIBUTE_LIST = "galleries";
 
     /**
      * The jsp index page path.

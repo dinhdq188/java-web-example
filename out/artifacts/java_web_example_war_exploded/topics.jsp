@@ -35,6 +35,8 @@
             </li>
         </ul> <!-- .cd-hero-slider -->
 
+
+
         <footer class="tm-footer">
             <jsp:include page="template/footer.jsp" />
         </footer>
