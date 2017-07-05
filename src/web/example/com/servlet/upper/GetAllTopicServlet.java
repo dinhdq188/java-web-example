@@ -21,12 +21,12 @@ public class GetAllTopicServlet extends HttpServlet {
     /**
      * The attribute list topic.
      */
-    public static final String GET_ALL_TOPIC_SERVLET_ATTRIBUTE_LIST_TOPIC = "list-topic";
+    private static final String GET_ALL_TOPIC_SERVLET_ATTRIBUTE_LIST_TOPIC = "topics";
 
     /**
      * The jsp index page path.
      */
-    public static final String QUADRATIC_EQUATION_JSP_INDEX = "/index.jsp";
+    private static final String QUADRATIC_EQUATION_JSP_TOPICS = "/topics.jsp";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,6 +34,6 @@ public class GetAllTopicServlet extends HttpServlet {
 
         List<Topics> topicsList = topic.getAllTopics();
         req.setAttribute(GET_ALL_TOPIC_SERVLET_ATTRIBUTE_LIST_TOPIC, topicsList);
-        req.getRequestDispatcher(QUADRATIC_EQUATION_JSP_INDEX).forward(req, resp);
+        req.getRequestDispatcher(QUADRATIC_EQUATION_JSP_TOPICS).forward(req, resp);
     }
 }
