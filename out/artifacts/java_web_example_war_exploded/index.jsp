@@ -17,7 +17,7 @@
                     <div class="container-fluid js-tm-page-content tm-page-pad" data-page-no="1">
                         <div class="row">
                             <div class="tm-3-col-container">
-                                <jsp:include page="/upper/get-all-topics" />
+                                <jsp:include page="/upper/get-all-topics"/>
                             </div>
                         </div>
                     </div>
@@ -30,11 +30,33 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
                         <div class="tm-img-gallery-container">
                             <div class="tm-img-gallery gallery-one">
-                            <!-- Gallery One pop up connected with JS code below -->
+                                <!-- Gallery One pop up connected with JS code below -->
                                 <div class="tm-img-gallery-info-container">
+                                    <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">First Image Gallery</span>
+                                    </h2>
+                                    <p class="tm-text">Curabitur quis tellus sed orci rhoncus fermentum. Praesent
+                                        sollicitudin scelerisque nunc et vehicula. Sed ex magna, elementum ut volutpat ut,
+                                        vehicula quis metus.
+                                    </p>
+                                </div>
+                                <div class="grid-item">
+                                   AAA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
 
-
+            <!-- Page 2 Gallery One -->
+            <li>
+                <div class="cd-full-width">
+                    <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+                        <div class="tm-img-gallery-container">
+                            <div class="tm-img-gallery gallery-one">
+                                <!-- Gallery One pop up connected with JS code below -->
+                                <div class="tm-img-gallery-info-container">
                                     <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">First Image Gallery</span></h2>
                                     <p class="tm-text">Curabitur quis tellus sed orci rhoncus fermentum. Praesent sollicitudin scelerisque nunc et vehicula. Sed ex magna, elementum ut volutpat ut, vehicula quis metus.
                                     </p>
@@ -84,6 +106,10 @@
                     </div>
                 </div>
             </li>
+
+
+
+
 
             <!-- Page 3 Gallery Two -->
             <li>

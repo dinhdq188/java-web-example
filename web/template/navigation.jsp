@@ -16,10 +16,10 @@
             <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item active selected">
-                        <a class="nav-link" href="#0" data-no="1">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/upper/get-all-topics">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="2">First Gallery</a>
+                        <a class="nav-link" href="/upper/get-all-galleries" >First Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#0" data-no="3">Second</a>

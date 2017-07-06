@@ -25,6 +25,7 @@ public class TopicImpl implements ITopic{
     public static final String SQL_QUERY_GET_ALL_TOPICS = "SELECT * FROM Topics";
 
     public List<Topics> getAllTopics() {
+
         List<Topics> topicsList = new ArrayList<Topics>();
 
         try {

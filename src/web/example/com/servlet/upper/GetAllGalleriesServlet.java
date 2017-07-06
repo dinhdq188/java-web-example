@@ -24,7 +24,7 @@ public class GetAllGalleriesServlet extends HttpServlet{
     /**
      * The jsp index page path.
      */
-    public static final String GALLERIES_JSP_PATH = "galleries.jsp";
+    public static final String GALLERIES_JSP_PATH = "../firstGalleries.jsp";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,6 +33,6 @@ public class GetAllGalleriesServlet extends HttpServlet{
         List<Galleries> galleriesList = gallery.getAllGalleries();
 
         req.setAttribute(GET_ALL_GALLERIES_SERVLET_ATTRIBUTE_LIST, galleriesList);
-        req.getRequestDispatcher(GET_ALL_GALLERIES_SERVLET_ATTRIBUTE_LIST).forward(req, resp);
+        req.getRequestDispatcher(GALLERIES_JSP_PATH).forward(req, resp);
     }
 }
