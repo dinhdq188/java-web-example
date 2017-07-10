@@ -24,7 +24,7 @@ public class GetAllGalleriesServlet extends HttpServlet{
     /**
      * The jsp index page path.
      */
-    public static final String GALLERIES_JSP_PATH = "../firstGalleries.jsp";
+    public static final String GALLERIES_JSP_PATH = "first-galleries.jsp";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
