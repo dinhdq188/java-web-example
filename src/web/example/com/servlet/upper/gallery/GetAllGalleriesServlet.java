@@ -1,4 +1,4 @@
-package web.example.com.servlet.upper;
+package web.example.com.servlet.upper.gallery;
 
 import web.example.com.entity.Galleries;
 import web.example.com.services.upper.IGallery;

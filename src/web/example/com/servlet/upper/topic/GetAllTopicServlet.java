@@ -1,4 +1,4 @@
-package web.example.com.servlet.upper;
+package web.example.com.servlet.upper.topic;
 
 import web.example.com.entity.Topics;
 import web.example.com.services.upper.ITopic;

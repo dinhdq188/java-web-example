@@ -36,6 +36,24 @@ public class Topics {
      */
     private String summary;
 
+    /**
+     * The topic default constructor.
+     */
+    public Topics() {
+
+    }
+
+    /**
+     * The topic constructor.
+     *
+     * @param name {@link String}
+     * @param summary {@link String}
+     */
+    public Topics(String name, String summary) {
+        this.topicName = name;
+        this.summary = summary;
+    }
+
     public int getId() {
         return id;
     }

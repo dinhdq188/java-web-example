@@ -64,7 +64,7 @@
     <!--Sta rt: Upper - Get all topics servlet.-->
     <servlet>
         <servlet-name>Upper-GetAllTopics</servlet-name>
-        <servlet-class>web.example.com.servlet.upper.GetAllTopicServlet</servlet-class>
+        <servlet-class>web.example.com.servlet.upper.topic.GetAllTopicServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Upper-GetAllTopics</servlet-name>
@@ -72,12 +72,25 @@
     </servlet-mapping>
     <!--End: Upper - Get all topics servlet.-->
 
+    <!--Start: Upper - Insert topic servlet.-->
+    <servlet>
+        <servlet-name>Upper-InsertTopicServlet</servlet-name>
+        <servlet-class>web.example.com.servlet.upper.topic.InsertTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upper-InsertTopicServlet</servlet-name>
+        <url-pattern>/upper/insert-topic</url-pattern>
+    </servlet-mapping>
+    <!--End: Upper - Insert topic servlet.-->
+
+    <!--Start: Upper - Get all topics servlet.-->
     <servlet>
         <servlet-name>Upper-GetAllGalleries</servlet-name>
-        <servlet-class>web.example.com.servlet.upper.GetAllGalleriesServlet</servlet-class>
+        <servlet-class>web.example.com.servlet.upper.gallery.GetAllGalleriesServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Upper-GetAllGalleries</servlet-name>
         <url-pattern>/upper/get-all-galleries</url-pattern>
     </servlet-mapping>
+    <!--End: Upper - Get all topics servlet.-->
 </web-app>

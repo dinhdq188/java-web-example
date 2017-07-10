@@ -18,4 +18,12 @@ public interface ITopic {
      */
     List<Topics> getAllTopics();
 
+    /**
+     * Insert the topic.
+     *
+     * @param topic {@link Topics}
+     *
+     * @return {@link Boolean}
+     */
+    boolean insertTopic(Topics topic);
 }
